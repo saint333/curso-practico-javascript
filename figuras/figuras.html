@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="/figuras/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Taller del curso practico de Javascript</p>
+    </header>
+
+    <main>
+        <section class="card-cuadrado">
+            <h2>calcula el perimento y area del cuadrado</h2>
+            <form class="formulario">
+                <label for="cuadrado">Longuitud del lado del cuadrado</label>
+                <input type="number" id="cuadrado">
+                <div class="botones">
+                    <button class="primero" type="button" onclick="calcularPerimetroCuadrado()">perimetro</button>
+                    <button class="segundo" type="button" onclick="calcularAreaCuadrado()">area</button>
+                </div>
+            </form>
+            <div id="resultado-cuadrado" class="respuesta"></div>
+        </section>
+
+        <section class="card-triangulo">
+            <h2>calcula el perimento y area del triangulo</h2>
+            <form class="formulario">
+                <label for="triangulo">Longuitud del primer lado del triangulo</label>
+                <input type="number" id="triangulo">
+                <label for="triangulo-1">Longuitud del segundo lado del triangulo</label>
+                <input type="number" id="triangulo-1">
+                <label for="base">Longuitud de la base del triangulo</label>
+                <input type="number" id="base">
+                <div class="botones">
+                    <button class="primero" type="button" onclick="calcularPerimetroTriangulo()">perimetro</button>
+                    <button class="segundo" type="button" onclick="calcularAreaTriangulo()">area</button>
+                </div>
+            </form>
+            <div id="resultado-triangulo" class="respuesta"></div>
+        </section>
+
+        <section class="card-circulo">
+            <h2>calcula el perimento y area del circulo</h2>
+            <form class="formulario">
+                <label for="circulo">Longuitud del radio del circulo</label>
+                <input type="number" id="circulo">
+                <div class="botones">
+                    <button class="primero" type="button" onclick="calcularPerimetroCirculo()">perimetro</button>
+                    <button class="segundo" type="button" onclick="calcularAreaCirculo()">area</button>
+                </div>
+            </form>
+            <div id="resultado-circulo" class="respuesta"></div>
+        </section>
+
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>
