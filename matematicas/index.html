@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematica</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Promedio, Moda y Mediana</h1>
+        <p>Tercer taller del curso practico de Javascript</p>
+    </header>
+    <main>
+        <section>
+            <h2>calculadora de Media, Mediana y Moda</h2>
+            <form >
+                <label for="lista">Ingrese los valores para calcular</label>
+                <input type="text" id="lista" placeholder="ej: 15,12,20,18">
+                <div class="botones">
+                    <button type="button" onclick="calcularMedia()">Media</button>
+                    <button type="button" onclick="calcularMediana()">Mediana</button>
+                    <button type="button" onclick="calcularModa()">Moda</button>
+                </div>
+            </form>
+            <div id="resultado" class="respuesta"></div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
